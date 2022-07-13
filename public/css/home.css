@@ -1,0 +1,164 @@
+/* navbar */
+
+.nav-font {
+    font-size: 1rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    text-shadow: lavender;
+}
+
+
+/* ************* */
+
+
+/** <header> */
+
+#hero-section {
+    top: 5px;
+    transition: all 2s;
+    animation: slideFromLeft 1s;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+/** </header> */
+
+
+/* about Us */
+
+.about_us {
+    line-height: 1.8em;
+}
+
+
+/* ********** */
+
+
+/* class */
+
+.class-list {
+    color: #4c5b64;
+}
+
+.class-list:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.it-class {
+    position       : relative;
+    background     : url("../img/learning.jpg");
+    background-size: contain;
+}
+
+.it-class::before {
+    content         : "";
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ************** */
+
+
+/* footer */
+
+.footer-color {
+    background-color: #f5cd77;
+}
+
+
+/* **************** */
+
+@media only screen and (max-width: 768px) {
+    #header-image {
+        display: none;
+    }
+    #service-img {
+        display: none;
+    }
+    #header {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    #footer-info {
+        margin: auto;
+    }
+    #founder-image {
+        max-width: 100%;
+    }
+}
+
+#footer-image {
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    #date {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #footer-image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #brand-name {
+        display: none;
+    }
+}
+
+
+/* animation */
+
+.slide-up-animation {
+    visibility: hidden;
+}
+
+.slide-up {
+    animation-name: slide-up;
+    -webkit-animation-name: slide-up;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

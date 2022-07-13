@@ -1,0 +1,23 @@
+.user_table {
+    display: block;
+}
+
+.free_Course {
+    position: absolute;
+    visibility: hidden;
+}
+
+.customer {
+    position: absolute;
+    visibility: hidden;
+}
+
+.questions {
+    position: absolute;
+    visibility: hidden;
+}
+
+.roles {
+    position: absolute;
+    visibility: hidden;
+}
